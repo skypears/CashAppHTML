@@ -1,0 +1,8 @@
+@import "tailwindcss";
+@plugin "daisyui"{
+    themes: light --default;
+};
+
+@utility btn {
+  @apply border px-2 font-normal text-base;
+}

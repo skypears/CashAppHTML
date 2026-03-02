@@ -1,0 +1,4 @@
+/.flowbite-react
+/.vscode
+/node_modules
+/pnpm-lock.yaml
