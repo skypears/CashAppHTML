@@ -30,7 +30,7 @@ function Sidebar() {
         </Link>
         <Link
           to="/inbox"
-          className={`btn btn-ghost btn-info size-12 rounded-full text-white hover:text-info hover:bg-gray-600 ${location.pathname === "/inbox" ? "btn-active" : ""}`}
+          className={`btn btn-ghost btn-info size-12 rounded-full text-white hover:text-info hover:bg-gray-600 ${location.pathname === "/inbox" || location.pathname === "/" ? "btn-active" : ""}`}
         >
           <div className="w-8 h-8 relative">
             <div className="absolute inset-[-25%]">
@@ -46,20 +46,17 @@ function Sidebar() {
             </div>
           </div>
         </Link>
-       <Link
+        <Link
           to="/enriched-file"
           className={`btn btn-ghost btn-info size-12 rounded-full text-white hover:text-info hover:bg-gray-600 ${location.pathname === "/enriched-file" ? "btn-active" : ""}`}
         >
-        
-        <Upload className="w-8 h-8 " />
+          <Upload className="w-8 h-8 " />
         </Link>
-         <Link
+        <Link
           to="/open-invoices"
           className={`btn btn-ghost btn-info size-12 rounded-full text-white hover:text-info hover:bg-gray-600 ${location.pathname === "/open-invoices" ? "btn-active" : ""}`}
         >
-        
-        
-        <FolderOpen className="w-8 h-8 " />
+          <FolderOpen className="w-8 h-8 " />
         </Link>
       </div>
     </div>
