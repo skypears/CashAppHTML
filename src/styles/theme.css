@@ -32,3 +32,8 @@ grid-area: topbar;
     background-color: #FBFBFB;
   }
 }
+.login-bg-overlay{
+  background-image: url("../assets/login.jpg");
+  background-size: cover;
+  height: 100dvh;
+}
